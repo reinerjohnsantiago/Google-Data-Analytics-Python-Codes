@@ -31,6 +31,8 @@ Candy purchased: 3
 Candy purchased: 4
 Candy purchased: 5
 candy_purchased = 0
+
+###ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER###
 while candy_purchased < 6:
     print('Candy purchased:', candy_purchased)
     candy_purchased +=1
@@ -40,6 +42,8 @@ Candy purchased: 2
 Candy purchased: 3
 Candy purchased: 4
 Candy purchased: 5
+###ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER###
+
 Hint 1
 Hint 2
 Hint 3
@@ -62,6 +66,8 @@ Candy purchased: 70
 Candy purchased: 80
 Candy purchased: 90
 Candy purchased: 100
+
+###ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER###
 candy_purchased = 0
 while candy_purchased <= 100:
     if candy_purchased %10==0:
@@ -78,6 +84,8 @@ Candy Purchased: 70
 Candy Purchased: 80
 Candy Purchased: 90
 Candy Purchased: 100
+###ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER###
+
 Hint 1
 Hint 2
 Hint 3
@@ -93,6 +101,10 @@ while n >= 0:
     print(n)
     sleep(1)    # Execution pauses for 1 second
     n = n - 1   # Decrement n by 1
+3
+2
+1
+0
 For the purposes of this task, pretend that 1 second = 1 minute, so the above cell would represent a 3-minute countdown.
 
 The movie theater has implemented online reservations through their website. From the seat selection page, customers have a limited amount of time to make their selection. You must write a function that counts down and reminds the user that they have limited time to make a selection. When time expires, it must print a timeout message.
@@ -121,9 +133,21 @@ Don't lose your seats! 2 minutes remaining.
 User timed out.
 Note that there is more than one way to solve this problem.
 
-import time from sleep
-mins = 0
-while m
+###ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER###
+1
+from time import sleep
+mins = 10
+while mins >=0:
+    if mins == 0:
+        print('User time out.')
+    elif mins ==5:
+        print('Place your reservation soon! 5 minutes remaining.')
+    elif mins == 2:
+        print("Don't lose your seats! 2 minutes remaining.")
+    else:
+        print(mins)
+    sleep(1)
+    mins=mins-1
 10
 9
 8
@@ -134,13 +158,27 @@ Place your reservation soon! 5 minutes remaining.
 3
 Don't lose your seats! 2 minutes remaining.
 1
-User timed out.
+User time out.
+###ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER######ANSWER###
+
 Hint 1
+There are four possible print statements to consider for each minute. Consider an if, elif, elif, else branching scheme.
+
+Test for the special cases first (mins == 5, mins == 2, mins == 0).
+
 Hint 2
+If your code is stuck in an infinite loop, check to make sure that you're decrementing the mins variable by one each time a condition that causes a print statement is satisfied.
+
+If you're having trouble with the sleep() function, try writing the code without it. If you can get the code to work without it, experiment with adding the sleep() function in different places to see how it affects the code's execution.
+
 Hint 3
+One approach is to set a while loop to execute when mins >= 0. For each iteration:
+
+Check if mins == 5. If it does, print the designated message, then decrement mins by one and sleep(1).
+Check if mins == 2. If it does, print the designated message, then decrement mins by one and sleep(1).
+Check if mins == 0. If it does, print the designated message, then decrement mins by one.
+If none of the above conditions are met, print mins, decrement its value by one, and sleep(1).
 Conclusion
 What are your key takeaways from this lab?
-
-[Double-click here to record your responses.]
-
+using while loops helps a lot. it makes automation faster and learning it is fun. 
 Congratulations! You've completed this lab. However, you may not notice a green check mark next to this item on Coursera's platform. Please continue your progress regardless of the check mark. Just click on the "save" icon at the top of this notebook to ensure your work has been logged.
