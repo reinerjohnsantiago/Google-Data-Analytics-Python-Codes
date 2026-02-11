@@ -1,0 +1,146 @@
+Activity: While loops
+Introduction
+In this lab, you will practice using while loops to iterate through data and perform repeated comparisons.
+
+Data analysts often work with code that requires repetition. In Python, iterative statements can help automate repetitive processes to make them more efficient.
+
+In this activity, you will continue your work as a junior data analyst for a movie theater. You have now transitioned fully into marketing. One of your tasks is analyzing customer purchases at the concession stand and automating messages to alert staff when a customer has earned a coupon.
+
+Tips for completing this lab
+As you navigate this lab, keep the following tips in mind:
+
+### YOUR CODE HERE ### indicates where you should write code. Be sure to replace this with your own code before running the code cell.
+Feel free to open the hints for additional guidance as you work on each task.
+To enter your answer to a question, double-click the markdown cell to edit. Be sure to replace the "[Double-click to enter your responses here.]" with your own answer.
+You can save your work manually by clicking File and then Save in the menu bar at the top of the notebook.
+You can download your work locally by clicking File and then Download and then specifying your preferred file format in the menu bar at the top of the notebook.
+Task 1: Iterate with a while loop
+While continuing your work as an analyst for a movie theater, you've been asked to create a function that will require a while loop. To prepare for the job, first practice using while loops.
+
+In this warmup task:
+
+Create a variable called candy_purchased that will act as a counter. Initialize it with a starting value of 0.
+Write a while loop that will continue iterating until 5 candies have been purchased.
+Each iteration of the loop must print 'Candy purchased: {number}' and increment candy_purchased by one.
+Expected output:
+
+Candy purchased: 0
+Candy purchased: 1
+Candy purchased: 2
+Candy purchased: 3
+Candy purchased: 4
+Candy purchased: 5
+candy_purchased = 0
+while candy_purchased < 6:
+    print('Candy purchased:', candy_purchased)
+    candy_purchased +=1
+Candy purchased: 0
+Candy purchased: 1
+Candy purchased: 2
+Candy purchased: 3
+Candy purchased: 4
+Candy purchased: 5
+Hint 1
+Hint 2
+Hint 3
+Task 2: Iterate using while and if
+In the next warmup task, you'll use a while loop that has an if statement and some Boolean logic.
+
+Write a while loop where candy_purchased begins at 0 and stops after 100 purchases have been made. Your code must:
+Increment candy_purchased by one with each iteration
+Print 'Candy purchased: {number}' only when a multiple of 10 purchases have been made
+Expected output:
+
+Candy purchased: 0
+Candy purchased: 10
+Candy purchased: 20
+Candy purchased: 30
+Candy purchased: 40
+Candy purchased: 50
+Candy purchased: 60
+Candy purchased: 70
+Candy purchased: 80
+Candy purchased: 90
+Candy purchased: 100
+candy_purchased = 0
+while candy_purchased <= 100:
+    if candy_purchased %10==0:
+        print('Candy Purchased:',candy_purchased)
+    candy_purchased +=1
+Candy Purchased: 0
+Candy Purchased: 10
+Candy Purchased: 20
+Candy Purchased: 30
+Candy Purchased: 40
+Candy Purchased: 50
+Candy Purchased: 60
+Candy Purchased: 70
+Candy Purchased: 80
+Candy Purchased: 90
+Candy Purchased: 100
+Hint 1
+Hint 2
+Hint 3
+Task 3: Create a webpage timer function
+Now that you have some practice constructing while loops, it's time to take on the project you've been asked to complete for the theater.
+
+This task makes use of a function called sleep() from the time module. Whenever sleep(n) is executed, the program will pause for n seconds. Run the below cell as an illustrative example to help you understand.
+
+from time import sleep
+​
+n = 3
+while n >= 0:
+    print(n)
+    sleep(1)    # Execution pauses for 1 second
+    n = n - 1   # Decrement n by 1
+For the purposes of this task, pretend that 1 second = 1 minute, so the above cell would represent a 3-minute countdown.
+
+The movie theater has implemented online reservations through their website. From the seat selection page, customers have a limited amount of time to make their selection. You must write a function that counts down and reminds the user that they have limited time to make a selection. When time expires, it must print a timeout message.
+
+Instantiate a variable called mins and assign it a starting value of 10.
+
+Write a while loop that uses the sleep() function and decrements mins from 10 minutes. For each minute:
+
+Print how many minutes remain as an integer.
+BUT:
+If there are 5 minutes left, print Place your reservation soon! 5 minutes remaining. instead of the integer.
+If there are 2 minutes left, print Don't lose your seats! 2 minutes remaining. instead of the integer.
+When zero minutes remain, print User timed out. instead of the integer.
+Expected output:
+
+10
+9
+8
+7
+6
+Place your reservation soon! 5 minutes remaining.
+4
+3
+Don't lose your seats! 2 minutes remaining.
+1
+User timed out.
+Note that there is more than one way to solve this problem.
+
+import time from sleep
+mins = 0
+while m
+10
+9
+8
+7
+6
+Place your reservation soon! 5 minutes remaining.
+4
+3
+Don't lose your seats! 2 minutes remaining.
+1
+User timed out.
+Hint 1
+Hint 2
+Hint 3
+Conclusion
+What are your key takeaways from this lab?
+
+[Double-click here to record your responses.]
+
+Congratulations! You've completed this lab. However, you may not notice a green check mark next to this item on Coursera's platform. Please continue your progress regardless of the check mark. Just click on the "save" icon at the top of this notebook to ensure your work has been logged.
